@@ -1,23 +1,66 @@
-.octodex{
+body {
+	box-sizing:border-box;
+	font-family: Helvetica, Arial, sans-serif;
+}
+*, *:before, *:after {
+	box-sizing:inherit;
+}
 
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+img {max-width: 100%}
+
+.octodex{
+	display:flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	max-width: 100%;
 }
 
 .octocat{
+	flex: 0 1 28%;
+	min-width: 368px;
+	margin: 20px 20px;
+}
 
+
+a > img {
+	border: 1px solid #CCC;
+	border-radius: 5px;
 }
 
 .image-footer{
-
+	border-bottom: 1px solid #CCC;
+	font-weight: bold;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .image-number{
-
+	color: #BBB;
 }
 
 .image-caption{
-
+	color: #AAA;
+	display: flex;
+	align-items: center;
+}
+.image-caption > a {
+	color: #333;
 }
 
 .authors{
-	
+	display: inline-block;
+}
+
+ul.authors img {
+	width: 50px;
+	border-style: none;
 }
