@@ -17,7 +17,6 @@ ul, li {
 
 img {
 	max-width: 100%;
-	opacity: .2
 }
 
 .octodex{
@@ -33,19 +32,22 @@ img {
 	margin: 20px 20px;
 	position: relative;
 }
+
+li.octocat > a {
+	position: relative;
+}
+
 li.octocat > a::after{ /*CSS Triangle*/
 	position: absolute;
-	width: 0;
-	height: 0;
 	border-style: solid;
 	border-width: 10px 10px 0 10px;
 	border-color: #cccccc transparent transparent transparent;
-	z-index: 1;
 	bottom: 0;
-	right: 0;
+	right: 5px;
+	bottom: -5px;
+	z-index: 1;
 	content: "";
 }
-
 
 a > img {
 	border: 1px solid #CCC;
@@ -58,6 +60,10 @@ a > img {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+
+.image-number::before{
+	content: "#"
 }
 
 .image-number{
