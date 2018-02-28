@@ -33,6 +33,10 @@ img {
 	position: relative;
 }
 
+img[src*="https://octodex.github.com/"]{
+	padding: 5px;
+}
+
 li.octocat > a {
 	position: relative;
 }
